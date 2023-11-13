@@ -40,7 +40,7 @@ importlib-metadata==6.0.0
 imutils==0.5.4
 itsdangerous==2.1.2
 jaraco.classes==3.2.3
-jax==0.4.10
+jax==0.3.25
 Jinja2==3.1.2
 joblib==1.2.0
 keras==2.10.0
