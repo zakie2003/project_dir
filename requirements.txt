@@ -1,4 +1,6 @@
-﻿absl-py==1.4.0
+p5py==1.0.0
+PEP517==0.13.1
+absl-py==1.4.0
 asgiref==3.6.0
 astunparse==1.6.3
 attrs==23.1.0
