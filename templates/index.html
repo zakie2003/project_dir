@@ -8,20 +8,33 @@
   </head>
   <style>
     input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+    input::-webkit-inner-spin-button 
+    {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    .bg_img
+    {
+      background-image: url('/static/img/stad_1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    .head
+    {
+      color: white;
+      width: 50%;
+    }
   </style>
-  <body>
+  <body class="bg_img">
     <div>
       <center>
-      <h1>
+      <h1 class="head">
         IPL PowerPlay Score Predictor
       </h1>
       </center>
     </div>
-    <div class="container">
+    <div class="container head">
       <form action="/" method="POST">
       <label for="exampleFormControlInput1" class="form-label">Bowling Team</label>
       <select required class="form-select" name="bowl" aria-label="Default select example">
@@ -85,7 +98,7 @@ input::-webkit-inner-spin-button {
       </form>
       <br>
       <center>
-        <h1>The PowerPlay Score is {{result}}</h1>
+        <h1>{{result}}</h1>
       </center>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
