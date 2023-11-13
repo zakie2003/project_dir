@@ -214,7 +214,7 @@ def inp():
         aaa=MyModel()
         zzz=aaa.predict(inpf)
         
-        return render_template("index.html",result=int(zzz[0]))  
+        return render_template("index.html",result=f'The Score of the input is {int(zzz[0])}')  
 
     return render_template("index.html")     
            
