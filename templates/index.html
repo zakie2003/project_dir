@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPL PowerPlay Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <style>
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  </style>
+  <body>
+    <div>
+      <center>
+      <h1>
+        IPL PowerPlay Score Predictor
+      </h1>
+      </center>
+    </div>
+    <div class="container">
+      <form action="/" method="POST">
+      <label for="exampleFormControlInput1" class="form-label">Bowling Team</label>
+      <select required class="form-select" name="bowl" aria-label="Default select example">
+        <option value="">Select team 1</option>
+        <option value="Mumbai Indian">Mumbai Indian</option>
+        <option value="Gujarat Titans">Gujarat Titans</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+        <option value="Delhi Capitals">Delhi Capitals</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Punjab Kings">Punjab Kings</option>
+        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+      </select>
+
+
+      <label for="exampleFormControlInput1" class="form-label">Batting Team </label>
+      <select required class="form-select" name="bat" aria-label="Default select example">
+        <option value="">Select team 2</option>
+        <option value="Mumbai Indian">Mumbai Indian</option>
+        <option value="Gujarat Titans">Gujarat Titans</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+        <option value="Delhi Capitals">Delhi Capitals</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Punjab Kings">Punjab Kings</option>
+        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+      </select>
+
+      <label for="exampleFormControlInput1" class="form-label">Innings</label>
+      <select required class="form-select" name="inning" aria-label="Default select example">
+        <option value="">Select Inning</option>
+        <option value="1">1st Inning</option>
+        <option value="2">2nd Inning</option>
+      </select>
+
+      <label for="exampleFormControlInput1" class="form-label">Venue Played on: </label>
+      <select required class="form-select" name="venue" aria-label="Default select example">
+        <option value="">Venue</option>
+        <option value="MA Chidambaram Stadium, Chepauk, Chennai">MA Chidambaram Stadium, Chepauk, Chennai</option>
+        <option value="Arun Jaitley Stadium, Delhi">Arun Jaitley Stadium, Delhi</option>
+        <option value="M Chinnaswamy Stadium">M Chinnaswamy Stadium</option>
+        <option value="Narendra Modi Stadium, Ahmedabad">Narendra Modi Stadium, Ahmedabad</option>
+        <option value="Wankhede Stadium, Mumbai">DWankhede Stadium, Mumbai</option>
+        <option value="Dr DY Patil Sports Academy, Mumbai">Dr DY Patil Sports Academy, Mumbai</option>
+        <option value="Punjab Cricket Association IS Bindra Stadium">Punjab Cricket Association IS Bindra Stadium</option>
+        <option value="Sawai Mansingh Stadium">Sawai Mansingh Stadium,Jaipur</option>
+        <option value="Rajiv Gandhi International Stadium, Uppal">Rajiv Gandhi International Stadium, Uppal</option>
+      </select>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">No. Of Bowler</label>
+        <input required type="number" name="numbboler" class="form-control" id="exampleFormControlInput1" placeholder="No. Of Bowler">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">No. Of Batsman came on field:</label>
+        <input required type="number" name="wic" class="form-control" id="exampleFormControlInput1" placeholder="No. Of Wickets">
+      </div>
+      
+      <center><button class="btn btn-primary" type="submit">Submit</button></center>
+      </form>
+      <br>
+      <center>
+        <h1>The PowerPlay Score is {{result}}</h1>
+      </center>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
